@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1 class="p-1 m-3 text-center fw-bold"><i>"You are now under Survey-Lance."</i></h1>
+
+<div class="row col-12">
+    <h3 class="p-1 m-3 text-left fw-bold">Survey Options:</h3>
+</div>
+
+<div class="container">
+    <div class="row col-4">
+        <h5 class="m-2 text-left text-secondary">
+            {{ title }}
+        </h5>
+        <p class="m-2 text-left lh-small">
+            <i>{{ instructions }}</i>
+        </p>
+        <a class="btn btn-outline-info justify-content-center" href="/start" role="button"
+            method="POST">
+            Start Survey
+        </a>
+    </div>  
+</div>    
+
+{% endblock %}
